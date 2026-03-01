@@ -1,5 +1,5 @@
 <view class="card">
   <view class="title">AI恋爱分析</view>
   <view class="content">{{result}}</view>
-  <button class="primary-btn" bindtap="analyze">生成分析</button>
+  <button class="primary-btn" bindtap="analyze" loading="{{loading}}" disabled="{{loading}}">{{loading ? '分析中...' : '生成分析'}}</button>
 </view>
