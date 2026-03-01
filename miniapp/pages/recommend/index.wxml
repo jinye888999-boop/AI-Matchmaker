@@ -1,0 +1,5 @@
+<view class="card" wx:for="{{matches}}" wx:key="candidate_user_id">
+  <view class="line">候选用户：{{item.candidate_user_id}}</view>
+  <view class="line score">匹配分：{{item.score}}</view>
+  <view class="line" wx:for="{{item.reasons}}" wx:key="*this">- {{item}}</view>
+</view>

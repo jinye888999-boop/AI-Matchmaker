@@ -1,0 +1,6 @@
+.chat-wrap { padding: 20rpx; }
+.msg { margin: 12rpx 0; padding: 14rpx; border-radius: 16rpx; max-width: 70%; }
+.me { margin-left: auto; background: #ffe2e8; }
+.ta { background: #fff; }
+.input-bar { display: flex; gap: 12rpx; padding: 20rpx; }
+input { flex: 1; background: #fff; border-radius: 12rpx; padding: 16rpx; }

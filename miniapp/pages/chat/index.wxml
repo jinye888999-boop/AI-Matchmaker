@@ -1,0 +1,7 @@
+<view class="chat-wrap">
+  <view class="msg {{item.from}}" wx:for="{{messages}}" wx:key="index">{{item.text}}</view>
+</view>
+<view class="input-bar">
+  <input value="{{input}}" bindinput="onInput" placeholder="输入消息..." />
+  <button size="mini" class="primary-btn" bindtap="send">发送</button>
+</view>

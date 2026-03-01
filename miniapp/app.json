@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/recommend/index",
+    "pages/chat/index",
+    "pages/matchmaker/index",
+    "pages/profile/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "AI红娘",
+    "navigationBarBackgroundColor": "#ff4d6d",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#ff4d6d",
+    "backgroundColor": "#ffffff",
+    "list": [
+      { "pagePath": "pages/home/index", "text": "首页" },
+      { "pagePath": "pages/recommend/index", "text": "推荐" },
+      { "pagePath": "pages/chat/index", "text": "聊天" },
+      { "pagePath": "pages/matchmaker/index", "text": "AI红娘" },
+      { "pagePath": "pages/profile/index", "text": "我的" }
+    ]
+  },
+  "style": "v2"
+}

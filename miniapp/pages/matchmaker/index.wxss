@@ -1,0 +1,2 @@
+.title { font-size: 34rpx; font-weight: 700; margin-bottom: 20rpx; }
+.advice { margin-top: 24rpx; color: #444; line-height: 1.8; white-space: pre-wrap; }
