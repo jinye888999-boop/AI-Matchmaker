@@ -1,8 +1,8 @@
 <view class="card">
   <view class="title">编辑资料</view>
-  <input placeholder="昵称" data-key="nickname" value="{{profile.nickname}}" bindinput="onFieldChange" />
-  <input placeholder="年龄" data-key="age" value="{{profile.age}}" bindinput="onFieldChange" />
-  <input placeholder="城市" data-key="city" value="{{profile.city}}" bindinput="onFieldChange" />
-  <input placeholder="学历" data-key="education" value="{{profile.education}}" bindinput="onFieldChange" />
+  <input placeholder="昵称" maxlength="20" data-key="nickname" value="{{profile.nickname}}" bindinput="onFieldChange" />
+  <input placeholder="年龄" type="number" maxlength="2" data-key="age" value="{{profile.age}}" bindinput="onFieldChange" />
+  <input placeholder="城市" maxlength="20" data-key="city" value="{{profile.city}}" bindinput="onFieldChange" />
+  <input placeholder="学历" maxlength="20" data-key="education" value="{{profile.education}}" bindinput="onFieldChange" />
   <button class="primary-btn" bindtap="saveProfile">保存资料</button>
 </view>

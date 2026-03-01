@@ -2,6 +2,9 @@
   <view class="title">推荐</view>
   <view class="tip">根据你的画像实时生成高匹配人选</view>
 </view>
+
+<view class="card" wx:if="{{loading}}">正在为你生成匹配结果...</view>
+
 <view class="card match" wx:for="{{matches}}" wx:key="candidate_user_id" bindtap="goUserDetail" data-id="{{item.candidate_user_id}}">
   <view class="top">
     <text>候选用户：{{item.candidate_user_id}}</text>
@@ -9,3 +12,5 @@
   </view>
   <view class="reason" wx:for="{{item.reasons}}" wx:key="*this">{{item}}</view>
 </view>
+
+<view class="card" wx:if="{{!loading && !matches.length}}">暂无匹配结果，请稍后重试。</view>

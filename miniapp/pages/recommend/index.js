@@ -2,7 +2,8 @@ const { request } = require('../../utils/api')
 
 Page({
   data: {
-    matches: []
+    matches: [],
+    loading: false
   },
 
   onShow() {
@@ -15,6 +16,10 @@ Page({
   },
 
   async fetchMatches() {
+    if (this.data.loading) {
+      return
+    }
+
     const mockPayload = {
       current_user: {
         user_id: 'e0d44c11-1111-4444-9999-f2fd7f71d100',
@@ -48,11 +53,16 @@ Page({
       top_k: 10
     }
 
+    this.setData({ loading: true })
+
     try {
       const data = await request('/match', 'POST', mockPayload)
-      this.setData({ matches: data })
+      this.setData({ matches: Array.isArray(data) ? data : [] })
     } catch (e) {
-      wx.showToast({ title: '匹配失败', icon: 'none' })
+      wx.showToast({ title: e.message || '匹配失败', icon: 'none' })
+      this.setData({ matches: [] })
+    } finally {
+      this.setData({ loading: false })
     }
   }
 })
