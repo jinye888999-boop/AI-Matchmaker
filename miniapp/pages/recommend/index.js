@@ -9,6 +9,11 @@ Page({
     this.fetchMatches()
   },
 
+  goUserDetail(e) {
+    const id = e.currentTarget.dataset.id
+    wx.navigateTo({ url: `/pages/user-detail/index?id=${id}` })
+  },
+
   async fetchMatches() {
     const mockPayload = {
       current_user: {

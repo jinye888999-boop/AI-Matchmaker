@@ -1,0 +1,7 @@
+<view class="card">
+  <view class="title">用户详情 · {{user.id}}</view>
+  <view class="row">年龄：{{user.age}}</view>
+  <view class="row">城市：{{user.city}}</view>
+  <view class="row">标签：{{user.tags}}</view>
+  <button class="primary-btn" bindtap="like">喜欢Ta</button>
+</view>

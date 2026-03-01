@@ -1,6 +1,6 @@
-.chat-wrap { padding: 20rpx; }
-.msg { margin: 12rpx 0; padding: 14rpx; border-radius: 16rpx; max-width: 70%; }
-.me { margin-left: auto; background: #ffe2e8; }
+ .chat-wrap { padding: 20rpx; min-height: 70vh; }
+.msg { margin: 12rpx 0; padding: 16rpx 20rpx; border-radius: 18rpx; max-width: 72%; }
+.me { margin-left: auto; background: #ffe2e8; color: #6f1f32; }
 .ta { background: #fff; }
-.input-bar { display: flex; gap: 12rpx; padding: 20rpx; }
-input { flex: 1; background: #fff; border-radius: 12rpx; padding: 16rpx; }
+.input-bar { display: flex; gap: 12rpx; padding: 20rpx; position: sticky; bottom: 0; background: #f6f7fb; }
+input { flex: 1; background: #fff; border-radius: 14rpx; padding: 16rpx; }

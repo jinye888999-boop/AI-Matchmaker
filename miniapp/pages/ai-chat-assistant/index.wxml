@@ -1,0 +1,7 @@
+<view class="card">
+  <view class="title">AI聊天助手</view>
+  <view class="label">当前场景</view>
+  <view class="content">{{scene}}</view>
+  <view class="label">建议回复</view>
+  <view class="content">{{suggestion}}</view>
+</view>

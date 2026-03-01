@@ -1,5 +1,7 @@
-<view class="card">
-  <view class="title">AI恋爱助手</view>
-  <button class="primary-btn" bindtap="getAdvice">生成恋爱建议</button>
-  <view class="advice">{{advice}}</view>
+<view class="card gradient">
+  <view class="title">AI红娘主页</view>
+  <view class="desc">围绕你的恋爱目标，提供分析、聊天与约会全链路辅助。</view>
 </view>
+<view class="card nav" bindtap="goLoveAnalysis">AI恋爱分析</view>
+<view class="card nav" bindtap="goChatAssistant">AI聊天助手</view>
+<view class="card nav" bindtap="goDateAdvice">AI约会建议</view>

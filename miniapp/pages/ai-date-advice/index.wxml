@@ -1,0 +1,4 @@
+<view class="card">
+  <view class="title">AI约会建议</view>
+  <view class="row" wx:for="{{advice}}" wx:key="*this">{{index+1}}. {{item}}</view>
+</view>

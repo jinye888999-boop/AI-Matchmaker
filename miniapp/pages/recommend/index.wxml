@@ -1,5 +1,11 @@
-<view class="card" wx:for="{{matches}}" wx:key="candidate_user_id">
-  <view class="line">候选用户：{{item.candidate_user_id}}</view>
-  <view class="line score">匹配分：{{item.score}}</view>
-  <view class="line" wx:for="{{item.reasons}}" wx:key="*this">- {{item}}</view>
+<view class="card header">
+  <view class="title">推荐</view>
+  <view class="tip">根据你的画像实时生成高匹配人选</view>
+</view>
+<view class="card match" wx:for="{{matches}}" wx:key="candidate_user_id" bindtap="goUserDetail" data-id="{{item.candidate_user_id}}">
+  <view class="top">
+    <text>候选用户：{{item.candidate_user_id}}</text>
+    <text class="score">{{item.score}}</text>
+  </view>
+  <view class="reason" wx:for="{{item.reasons}}" wx:key="*this">{{item}}</view>
 </view>

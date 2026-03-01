@@ -10,7 +10,12 @@ Page({
     ]
   },
 
-  goProfile() {
-    wx.switchTab({ url: '/pages/profile/index' })
-  }
+  goRecommend() { wx.switchTab({ url: '/pages/recommend/index' }) },
+  goChatList() { wx.navigateTo({ url: '/pages/chat-list/index' }) },
+  goMatchSuccess() { wx.navigateTo({ url: '/pages/match-success/index' }) },
+  goAiHome() { wx.switchTab({ url: '/pages/matchmaker/index' }) },
+  goEditProfile() { wx.navigateTo({ url: '/pages/edit-profile/index' }) },
+  goAiLoveAnalysis() { wx.navigateTo({ url: '/pages/ai-love-analysis/index' }) },
+  goAiChatAssistant() { wx.navigateTo({ url: '/pages/ai-chat-assistant/index' }) },
+  goAiDateAdvice() { wx.navigateTo({ url: '/pages/ai-date-advice/index' }) }
 })
