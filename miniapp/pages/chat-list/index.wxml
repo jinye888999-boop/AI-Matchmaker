@@ -1,0 +1,4 @@
+<view class="card" wx:for="{{chats}}" wx:key="id" bindtap="openChat">
+  <view class="title">{{item.name}}</view>
+  <view class="sub">{{item.msg}}</view>
+</view>

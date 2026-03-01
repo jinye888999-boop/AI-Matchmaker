@@ -1,0 +1,6 @@
+<view class="card center">
+  <view class="emoji">🎉</view>
+  <view class="title">匹配成功</view>
+  <view class="sub">你们互相喜欢，快去开启对话吧</view>
+  <button class="primary-btn" bindtap="openChat">立即聊天</button>
+</view>

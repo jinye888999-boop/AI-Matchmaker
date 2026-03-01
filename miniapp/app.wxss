@@ -1,19 +1,21 @@
 page {
-  background: #f6f7fb;
+  background: linear-gradient(180deg, #fff8fa 0%, #f6f7fb 35%, #f3f5fb 100%);
   color: #222;
   font-size: 28rpx;
 }
 
 .card {
   background: white;
-  border-radius: 20rpx;
+  border-radius: 24rpx;
   padding: 24rpx;
   margin: 20rpx;
-  box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.04);
+  box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.05);
 }
 
 .primary-btn {
+  margin-top: 20rpx;
   background: linear-gradient(120deg, #ff4d6d, #ff7a8f);
   color: white;
   border-radius: 999rpx;
+  border: none;
 }

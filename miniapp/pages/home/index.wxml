@@ -1,8 +1,28 @@
+<view class="hero card">
+  <view class="title">AI红娘 · 高效恋爱全流程</view>
+  <view class="subtitle">从资料完善到智能匹配，一站式提升脱单效率</view>
+  <view class="quick-grid">
+    <view class="quick-item" bindtap="goRecommend">推荐</view>
+    <view class="quick-item" bindtap="goChatList">聊天列表</view>
+    <view class="quick-item" bindtap="goMatchSuccess">匹配成功</view>
+    <view class="quick-item" bindtap="goAiHome">AI红娘主页</view>
+  </view>
+</view>
+
 <view class="card">
-  <view class="title">AI红娘 · 让恋爱更高效</view>
-  <view class="subtitle">完整流程</view>
+  <view class="section-title">恋爱流程</view>
   <block wx:for="{{steps}}" wx:key="*this">
-    <view class="step">{{index + 1}}. {{item}}</view>
+    <view class="step">
+      <text class="step-index">{{index + 1}}</text>
+      <text>{{item}}</text>
+    </view>
   </block>
-  <button class="primary-btn" bindtap="goProfile">开始完善资料</button>
+  <button class="primary-btn" bindtap="goEditProfile">立即完善资料</button>
+</view>
+
+<view class="card">
+  <view class="section-title">热门功能</view>
+  <view class="feature" bindtap="goAiLoveAnalysis">AI恋爱分析</view>
+  <view class="feature" bindtap="goAiChatAssistant">AI聊天助手</view>
+  <view class="feature" bindtap="goAiDateAdvice">AI约会建议</view>
 </view>

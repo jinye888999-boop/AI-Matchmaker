@@ -1,2 +1,4 @@
-.title { font-size: 34rpx; font-weight: 700; margin-bottom: 20rpx; }
-.advice { margin-top: 24rpx; color: #444; line-height: 1.8; white-space: pre-wrap; }
+ .gradient { background: linear-gradient(150deg, #ff4d6d, #ffa2b5); color: #fff; }
+.title { font-size: 38rpx; font-weight: 700; margin-bottom: 10rpx; }
+.desc { opacity: .9; line-height: 1.7; }
+.nav { font-weight: 600; color: #8d2941; border: 1rpx solid #ffd1da; background: #fff7f9; }
