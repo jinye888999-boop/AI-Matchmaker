@@ -1,0 +1,5 @@
+<view class="card">
+  <view class="title">AI恋爱助手</view>
+  <button class="primary-btn" bindtap="getAdvice">生成恋爱建议</button>
+  <view class="advice">{{advice}}</view>
+</view>

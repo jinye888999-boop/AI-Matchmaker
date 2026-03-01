@@ -1,0 +1,8 @@
+<view class="card">
+  <view class="title">AI红娘 · 让恋爱更高效</view>
+  <view class="subtitle">完整流程</view>
+  <block wx:for="{{steps}}" wx:key="*this">
+    <view class="step">{{index + 1}}. {{item}}</view>
+  </block>
+  <button class="primary-btn" bindtap="goProfile">开始完善资料</button>
+</view>
