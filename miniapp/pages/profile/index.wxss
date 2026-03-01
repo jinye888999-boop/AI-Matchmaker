@@ -1,4 +1,17 @@
- .header { background: #fff1f5; }
-.title { font-size: 36rpx; font-weight: 700; }
-.meta { color: #91515f; margin-top: 8rpx; }
-.menu { padding: 26rpx 24rpx; margin-top: 0; margin-bottom: 16rpx; font-weight: 600; color: #444; }
+.header {
+  background: linear-gradient(135deg, rgba(255, 95, 157, 0.9), rgba(133, 116, 255, 0.9));
+}
+
+.meta {
+  margin-top: 10rpx;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.menu {
+  padding: 30rpx 26rpx;
+  margin-top: 0;
+  margin-bottom: 16rpx;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+}
